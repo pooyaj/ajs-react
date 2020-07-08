@@ -1,5 +1,5 @@
 {
-  "name": "ajs-react-example",
+  "name": "@segment/analytics.js-react-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -10,10 +10,12 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@segment/analytics.js-integration-mixpanel": "^3.2.0",
+    "@segment/analytics.js-react": "link:..",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "link:../node_modules/react-scripts",
-    "ajs-react": "link:.."
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "link:../node_modules/react-scripts"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

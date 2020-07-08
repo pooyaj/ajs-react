@@ -1,10 +1,14 @@
 {
-  "name": "ajs-react",
-  "version": "1.0.0",
+  "name": "@segment/analytics.js-react",
+  "version": "0.1.0",
   "description": "Analytics.js for React",
-  "author": "pooyaj",
   "license": "MIT",
-  "repository": "pooyaj/ajs-react",
+  "repository": "segmentio/analytics.js-react",
+  "keywords": [
+    "tracking",
+    "analytics",
+    "analytics.js"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -23,8 +27,13 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "dependencies": {
+    "@segment/analytics.js-core": "^3.13.5",
+    "@segment/analytics.js-integration-segmentio": "^4.2.5"
+  },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
